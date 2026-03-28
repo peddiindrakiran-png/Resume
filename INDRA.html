@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Resume</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #f2f4f7;
+        font-family: "Calibri", "Segoe UI", Arial, sans-serif;
+        color: #222;
+    }
+
+    .resume {
+        max-width: 900px;
+        margin: 40px auto;
+        background: #ffffff;
+        padding: 45px 55px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    /* HEADER */
+    .header {
+        display: grid;
+        grid-template-columns: 150px auto;
+        gap: 30px;
+        align-items: center;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+    }
+
+    .header img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #2c3e50;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 28px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #2c3e50;
+    }
+
+    /* NAVIGATION */
+    .navbar {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .navbar a {
+        margin: 0 14px;
+        text-decoration: none;
+        font-size: 13px;
+        color: #2c3e50;
+        font-weight: 600;
+    }
+
+    /* SECTIONS */
+    section {
+        margin-bottom: 28px;
+    }
+
+    h3 {
+        margin-bottom: 10px;
+        font-size: 17px;
+        color: #2c3e50;
+        text-transform: uppercase;
+        border-bottom: 2px solid #2c3e50;
+        display: inline-block;
+        padding-bottom: 4px;
+    }
+
+    p {
+        margin: 6px 0;
+        line-height: 1.6;
+        font-size: 15px;
+    }
+
+    .edu-item, .project-item {
+        margin-top: 10px;
+    }
+
+    strong {
+        color: #000;
+    }
+
+    address {
+        font-style: normal;
+        line-height: 1.7;
+        font-size: 15px;
+    }
+
+    .signature {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+   
+    @media print {
+        body {
+            background: #fff;
+        }
+        .resume {
+            box-shadow: none;
+            margin: 0;
+        }
+        .navbar {
+            display: none;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <div class="header">
+        <img src="indra.jpg" alt="Profile Photo">
+        <div>
+            <h1>P INDRA KIRAN REDDY</h1>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <div class="navbar">
+        <a href="#career">OBJECTIVE</a>
+        <a href="#education">EDUCATION</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#project">PROJECT</a>
+        <a href="#personal">PERSONAL</a>
+        <a href="#address">CONTACT</a>
+    </div>
+
+    <!-- OBJECTIVE -->
+    <section id="career">
+        <h3>Career Objective</h3>
+        <p>
+            Motivated Computer Science Engineering student seeking opportunities to apply
+            programming knowledge, problem-solving abilities, and technical concepts while
+            continuously learning and contributing to software development projects.
+        </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+        <h3>Educational Qualification</h3>
+        <div class="edu-item">
+            <strong>B.Tech (Computer Science Engineering)</strong><br>
+            KLH University | 2029 | Percentage: 90%
+        </div>
+        <div class="edu-item">
+            <strong>Intermediate</strong><br>
+            Narayana Junior College | 2025 | Percentage: 97%
+        </div>
+        <div class="edu-item">
+            <strong>SSC</strong><br>
+             Dilsuknagar Public School | 2023 | Percentage: 95%
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h3>Technical Skills</h3>
+        <p><strong>Programming Languages:</strong> C, C++, Java, Python</p>
+        <p><strong>Web Technologies:</strong> HTML5, CSS3, JavaScript</p>
+        <p><strong>Database:</strong> MySQL</p>
+    </section>
+
+    <!-- PROJECT -->
+    <section id="project">
+        <h3>Project</h3>
+        <div class="project-item">
+            <strong>Billing System Project</strong>
+            <p>
+                Developed a supermarket billing system to calculate totals, manage items,
+                and generate customer invoices efficiently.
+            </p>
+        </div>
+    </section>
+
+    <!-- PERSONAL -->
+    <section id="personal">
+        <h3>Personal Details</h3>
+        <p><strong>Name:</strong> P INDRA KIRAN REDDY</p>
+        <p><strong>Date of Birth:</strong> 04-06-2007</p>
+        <p><strong>Gender:</strong> Male</p>
+        <p><strong>Nationality:</strong> Indian</p>
+    </section>
+
+    <!-- DECLARATION -->
+    <section id="declaration">
+        <h3>Declaration</h3>
+        <p>
+            I hereby declare that the above information is true and correct to the best of my knowledge.
+        </p>
+        <p><strong>Place:</strong> Hyderabad | <strong>Date:</strong> 26 MARCH 2026</p>
+        <p class="signature">INDRAREDDY</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="address">
+        <h3>Address & Contact</h3>
+        <address>
+            1-98/40,LB Nagar<br>
+            Rangareddy, Telangana, India<br>
+            <strong>Email:</strong> ir077583@gmail.com<br>
+            <strong>Phone:</strong> +91 9876543209
+        </address>
+    </section>
+
+</div>
+
+</body>
+</html>
